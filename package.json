@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "name": "@mkoreo/reacttemplate",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--inspect=0.0.0.0' DEBUG='dashserver:*' webpack serve --host 0.0.0.0 --config webpack.dev.babel.js",
+    "build": "webpack --config webpack.dev.babel.js",
+    "release": "webpack --config webpack.lib.babel.js",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "@radix-ui/colors": "^0.1.8",
+    "@stitches/react": "^1.2.6"
+  },
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/register": "^7.16.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/node": "^17.0.5",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "4.0.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "css-loader": "^6.5.1",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.1",
+    "webpack-merge": "^5.8.0"
+  }
+}
