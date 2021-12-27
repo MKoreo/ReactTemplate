@@ -1,6 +1,11 @@
 {
-  "private": true,
   "name": "@mkoreo/reacttemplate",
+  "repository": {
+    "url": "git://github.com/MKoreo/ReactTemplate.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pgk.github.com/"
+  },
   "version": "0.0.0",
   "main": "dist/index.js",
   "type": "module",
@@ -9,19 +14,16 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect=0.0.0.0' DEBUG='dashserver:*' webpack serve --host 0.0.0.0 --config webpack.dev.babel.js",
+    "dev": "NODE_OPTIONS='--inspect=0.0.0.0' DEBUG='reacttemplate:*' webpack serve --host 0.0.0.0 --config webpack.dev.babel.js",
     "build": "webpack --config webpack.dev.babel.js",
     "release": "webpack --config webpack.lib.babel.js",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*",
     "@radix-ui/colors": "^0.1.8",
-    "@stitches/react": "^1.2.6"
-  },
-  "dependencies": {
-    
+    "@stitches/react": "^1.2.6",
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
